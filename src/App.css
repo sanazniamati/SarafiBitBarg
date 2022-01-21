@@ -20,3 +20,39 @@
   box-sizing: border-box;
   font-family: IRANSansWeb;
 }
+
+.support_icon_container {
+  position: fixed;
+  left: -15px;
+  bottom: 53px;
+  width: 120px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.support_icon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 100%;
+}
+.support_transition {
+  animation: blow 2.5s infinite;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin: 0 auto;
+}
+
+@keyframes blow {
+  0% {
+    background-color: #437dd3;
+    transform: scale(6);
+  }
+
+  100% {
+    transform: scale(10);
+  }
+}

@@ -1,0 +1,111 @@
+.bit_main_container {
+  margin: 120px auto 0 auto;
+  padding: 0 15px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: 272px;
+  height: 100px;
+  margin: 0 0 5px;
+}
+
+.row_section {
+  display: flex;
+  justify-content: center;
+}
+
+.input_main {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 5% 2.1rem;
+  margin-top: -4px;
+  margin-right: 2px;
+  text-align: center;
+}
+
+.text_field {
+  position: relative;
+}
+
+.absolute_unit {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  font-size: 10px;
+  background-color: #fff;
+  padding: 3px;
+}
+
+.bitqin {
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  left: 50px;
+  font-size: 10px;
+}
+
+.action_container {
+  text-align: center;
+  margin-top: 10px;
+}
+#btn_sell {
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  color: #5f6368;
+  font-size: 12px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  width: 155px;
+  outline: none;
+}
+
+#btn_buy {
+  background-color: #2585fd;
+  border: 1px solid #2585fd;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  width: 155px;
+  outline: none;
+}
+
+.buy_content {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: gray;
+}
+
+.buy_content h2 {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.contact a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2485fd;
+  margin-top: -2px;
+}

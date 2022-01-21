@@ -1,123 +1,148 @@
 import React from "react";
 import "./HeaderHome.css";
+import MenuIcon from "../assets/images/MenuIcon";
+import order from "../assets/images/order.png";
+import profile from "../assets/images/profile.png";
+import Identity from "../assets/images/Identity.png";
+import bitgap from "../assets/images/bitgap.png";
+import price from "../assets/images/price.png";
+import Wage from "../assets/images/Wage.png";
+import Direction from "../assets/images/Direction.png";
+import Notifications from "../assets/images/Notifications.png";
+import wallet from "../assets/images/wallet.png";
+import question from "../assets/images/question.png";
+import comment from "../assets/images/comment.png";
+import Relationship from "../assets/images/Relationship.png";
+import bag from "../assets/images/bag.png";
+import opportunity from "../assets/images/opportunity.png";
+import about from "../assets/images/about.png";
+import { useState } from "react";
+// import * as faIcone from "react-icons/fa";
 
 export default function HeaderHome() {
+  const [showMenue, setShowMenue] = useState(false);
+  const show = () => setShowMenue((showMenue) => !showMenue);
+
   return (
     <div className="main_navbar">
-      <div className="service_dialog">
-        <div className="service_container">
-          {/* <ul>
-            <li>
-              <a href="https://bitbarg.me/profile">
-                <span class="bitbarg-services bg-profile"></span>
-                <span className="service-title">پروفایل</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://bitbarg.me/profile/offers">
-                <span class="bitbarg-services bg-offers"></span>
-                <span className="service-title">سفارشات</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://bitbarg.me/users/kyc">
-                <span class="bitbarg-services bg-identify"></span>
-                <span className="service-title">احراز هویت</span>
-              </a>
-            </li>
-            <li>
-              <a href="/bitgap">
-                <span class="bitbarg-services bg-bitgap"></span>
-                <span className="service-title">بیت گپ</span>
-              </a>
-            </li>
-            <li>
-              <a href="/live-price">
-                <span class="bitbarg-services bg-live_price"></span>
-                <span className="service-title">قیمت لحظه ای</span>
-              </a>
-            </li>
-            <li>
-              <a href="/fee">
-                <span class="bitbarg-services bg-fee"></span>
-                <span className="service-title">کارمزدها</span>
-              </a>
-            </li>
-            <li>
-              <a href="/alert">
-                <span class="bitbarg-services bg-notif"></span>
-                <span className="service-title">بمن اطلاع بده!</span>
-              </a>
-            </li>
-            <li>
-              <a href="/how-to-create-wallet">
-                <span class="bitbarg-services bg-wallet"></span>
-                <span className="service-title">ساخت کیف پول</span>
-              </a>
-            </li>
-            <li>
-              <a href="/faq">
-                <span class="bitbarg-services bg-faq"></span>
-                <span className="service-title">سوالات متداول</span>
-              </a>
-            </li>
-            <li>
-              <a href="/comment">
-                <span class="bitbarg-services bg-comment"></span>
-                <span className="service-title">
-                  نظرات کاربران<span></span>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="/roadmap">
-                <span class="bitbarg-services bg-road"></span>
-                <span className="service-title"> مسیر بیت برگ</span>
-              </a>
-            </li>
-            <li>
-              <a href="/contact-us">
-                <span class="bitbarg-services bg-contact-with-admin"></span>
-                <span className="service-title">ارتباط با مدیریت</span>
-              </a>
-            </li>
-            <li>
-              <a href="/bug-report">
-                <span class="bitbarg-services bg-bug"></span>
-                <span className="service-title"> گزارش باگ</span>
-              </a>
-            </li>
-            <li>
-              <a
-                // target="_blank"
-                href="https://jobinja.ir/companies/bitbarg/jobs"
-              >
-                <span class="bitbarg-services bg-jobs"></span>
-                <span className="service-title"> فرصت های شغلی</span>
-              </a>
-            </li>
-            <li>
-              <a href="/about-us">
-                <span class="bitbarg-services bg-about"></span>
-                <span className="service-title"> درباره ما</span>
-              </a>
-            </li>
-          </ul> */}
-        </div>
-      </div>
       <div className="main_navbar_container">
-        <a
-          href="https://bitbarg.me/users/login"
-          class="btn btn-primary fade-text btn-login"
-        >
-          <div class="js-fade-text">ورود</div>
-          <div class="js-fade-text">ثبت نام</div>
-        </a>
-        <div className="service_button">
-          <svg id="toggle-nav" class="toggle-nav">
-            <use xlink:href="/images/cryptoicons.svg?1.0.3#tools"></use>
-          </svg>
+        <div className="service_button" onClick={show}>
+          <MenuIcon />
+          {/* <faIcone.CgMenuGridO  /> */}
+
+          {/* show or hide menu use useState showMenu with treneryOperator */}
+          {showMenue ? (
+            <div className="service_dialog">
+              <div className="service_container">
+                <ul>
+                  <li>
+                    <a href="https://bitbarg.me/users/kyc">
+                      <img width="70px" src={Identity} alt="Identity" />
+                      <div className="service-title">احراز هویت</div>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="https://bitbarg.me/profile/offers">
+                      <img width="70px" src={order} alt="order" />
+                      <div className="service-title">سفارشات</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://bitbarg.me/profile">
+                      <img width="70px" src={profile} alt="profile" />
+                      <div className="service-title">پروفایل</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/fee">
+                      <img width="70px" src={Wage} alt="Wage" />
+                      <div className="service-title">کارمزدها</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/live-price">
+                      <img width="70px" src={price} alt="Price" />
+                      <div className="service-title">قیمت لحظه ای</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/bitgap">
+                      <img width="70px" src={bitgap} alt="bitgap" />
+                      <div className="service-title">بیت گپ</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/faq">
+                      <img width="70px" src={question} alt="question" />
+                      <div className="service-title">سوالات متداول</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/how-to-create-wallet">
+                      <img width="70px" src={wallet} alt="wallet" />
+                      <div className="service-title">ساخت کیف پول</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/alert">
+                      <img
+                        width="70px"
+                        src={Notifications}
+                        alt="Notifications"
+                      />
+                      <div className="service-title"> !بمن اطلاع بده</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/contact-us">
+                      <img width="70px" src={Relationship} alt="Relationship" />
+                      <div className="service-title">ارتباط با مدیریت</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/roadmap">
+                      <img width="70px" src={Direction} alt="Direction" />
+                      <div className="service-title"> مسیر بیت برگ</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/comment">
+                      <img width="70px" src={comment} alt="comment" />
+                      <div className="service-title"> نظرات کاربران</div>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="/about-us">
+                      <img width="70px" height="70" src={about} alt="about" />
+                      <div className="service-title"> درباره ما</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      // target="_blank"
+                      href="https://jobinja.ir/companies/bitbarg/jobs"
+                    >
+                      <img width="70px" src={opportunity} alt="opportunity" />
+                      <div className="service-title"> فرصت های شغلی</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/bug-report">
+                      <img width="70px" src={bag} alt="bag" />
+                      <div className="service-title"> گزارش باگ</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          ) : null}
         </div>
+        <a href="https://bitbarg.me/users/login" className="btn_login_a">
+          <div className="btn_login">ورود</div>
+          {/* <div class="js-fade-text">ثبت نام</div> */}
+        </a>
       </div>
     </div>
   );

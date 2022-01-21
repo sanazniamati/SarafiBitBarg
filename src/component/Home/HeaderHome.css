@@ -1,14 +1,6 @@
 .main_navbar {
   width: 100vw;
-  padding: 15px 30px;
-  text-align: right;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  background-color: aqua;
-}
-.service_dialog {
-  display: block;
+  height: 66px;
 }
 
 .main_navbar_container {
@@ -17,4 +9,67 @@
   display: flex;
   align-items: center;
   justify-content: end;
+}
+.btn_login {
+  color: #fff !important;
+  font-size: 12px;
+  padding: 7.6px 22.5px;
+  text-decoration: none;
+  margin: 0 10px;
+  border-radius: 5px;
+  background: #2585ff !important;
+  border-color: #2585ff !important;
+  border: 1px solid;
+  outline: none;
+  margin-top: -8px;
+}
+.btn_login_a {
+  text-decoration: none;
+}
+.service_button {
+  color: gray;
+  margin-right: 7px;
+}
+.service_dialog {
+  /* display: none; */
+}
+.service_container {
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 28%);
+  height: 546px;
+  margin-top: 64px;
+  padding: 9px 0 10px;
+  position: absolute;
+  top: 0px;
+  right: 32px;
+  width: 328px;
+  display: flex;
+}
+
+.service_dialog ul {
+  text-align: center;
+  padding: 13px 9px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service_dialog ul li {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 100px;
+  width: 100px;
+  padding: 1px 7px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.service_dialog ul li a {
+  text-decoration: none;
+  color: #202124;
+  display: block;
+  padding: 3px 0;
 }
