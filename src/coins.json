@@ -1,0 +1,28 @@
+[
+  {
+    "id": 0,
+    "namef": "بیت کویین",
+    "coin": "btc",
+    "name": "Bitcoin - BTC",
+    "numbercurenct": "1",
+    "networkOne": "Bitcoin",
+    "valueNetworkOne": "711,596",
+    "networkTwo": "BEP20",
+    "valueNetworkTwo": "7,20",
+    "fee": "رایگان",
+    "icon": "https://bitbarg.me/images/coins/BTC.png"
+  },
+  {
+    "id": 0,
+    "namef": "اتریوم",
+    "coin": "btc",
+    "name": "Bitcoin - BTC",
+    "numbercurenct": "1",
+    "networkOne": "Bitcoin",
+    "valueNetworkOne": "711,596",
+    "networkTwo": "BEP20",
+    "valueNetworkTwo": "7,20",
+    "fee": "رایگان",
+    "icon": "https://bitbarg.me/images/coins/BTC.png "
+  }
+]

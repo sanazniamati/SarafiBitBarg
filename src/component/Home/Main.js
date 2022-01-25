@@ -1,5 +1,6 @@
 import React from "react";
 import "./Main.css";
+import Searchbar from "./Searchbar";
 import logo from "../assets/images/logo.png";
 import BTC from "../assets/images/BTC.png";
 
@@ -12,14 +13,9 @@ export default function Main() {
         </div>
         <div className="row_section">
           <div className="text_field ">
-            <input className="input_main" type="text" />
-            {/* <span className="bitqin">بیت کوین</span>
-            <img
-              src={BTC}
-              className="bitqin"
-              style={{ width: 20, hight: 20 }}
-              alt="BTC"
-            /> */}
+            <div className="input_main curency_select">
+              {/* <Searchbar /> */}
+            </div>
             <lable className="absolute_unit"> انتخاب ارز</lable>
           </div>
           <div className="text_field ">

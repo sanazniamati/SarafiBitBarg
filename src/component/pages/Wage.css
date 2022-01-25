@@ -1,0 +1,237 @@
+.parent_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -12px;
+}
+
+.list_page_content {
+  position: relative;
+  margin-top: 1rem;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  width: 100%;
+  height: 100%;
+  max-width: 1265px;
+}
+
+.search_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.btn_search {
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 14px;
+  padding-top: 7px;
+  /* text-decoration: none; */
+  font-weight: 400;
+  margin: 0 10px;
+  border-radius: 5px;
+  background: #2585ff;
+  border-color: #2585ff;
+  border: 1px solid;
+  outline: none;
+  position: relative;
+}
+
+.input_search_box_view {
+  box-sizing: border-box;
+  min-width: 0;
+  display: inline-flex;
+  position: relative;
+  height: 32px;
+  align-items: center;
+  line-height: 1.6;
+  border: 1px solid #e6e8ea;
+  border-radius: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 0;
+  width: 245px;
+}
+
+.input_search_box_view svg {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  color: #848e9c;
+}
+
+.input_search_box_view input {
+  font-size: 11px;
+  color: #afafaf;
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 2.5rem);
+  margin-left: 0.5rem;
+  line-height: 1.43;
+  padding: 0 0.1rem;
+  outline: 0;
+  border: 0;
+}
+
+.list_page_content p {
+  font-size: 12px;
+  padding: 10px;
+  color: #8c8686;
+}
+
+.p_warning_wage {
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin-top: 6px;
+  margin-right: 10px;
+  color: #8c8686;
+}
+
+.p_2_warning_wage {
+  font-size: 12px;
+  color: #2485ff;
+  border-bottom: 2px #2485ff dotted;
+  margin-left: 2px;
+}
+.tabel_header {
+  display: flex;
+  direction: rtl;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  border-color: #eaecef;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #fafafa;
+  font-size: 12px;
+  /* margin-top: -15px;*/
+}
+
+.number_td {
+  max-width: 8%;
+  flex: 0 1 8%;
+  text-align: center;
+  color: #afafaf;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  line-height: 16px;
+  font-size: 12px;
+  transition: 0.4s;
+}
+
+.name_td {
+  max-width: 36%;
+  flex: 1 1 45%;
+  align-items: center;
+  text-align: start;
+  padding-right: 36px;
+}
+.sell_price_td {
+  max-width: 20%;
+  flex: 1 1 20%;
+  text-align: start;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  line-height: 16px;
+}
+.buy_price_td {
+  max-width: 38%;
+  flex: 1 1 30%;
+  text-align: center;
+}
+.css-4cffwv {
+  width: 100%;
+  direction: rtl;
+  margin-top: 9px;
+  border-bottom: 1px solid;
+  border-color: #eaecef;
+  padding-bottom: 10px;
+}
+.css-ahynou {
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.number-td-2 {
+  max-width: 1%;
+  flex: 0 1 8%;
+  text-align: center;
+  color: #afafaf;
+  margin-right: 45px;
+}
+.name-td-2 {
+  max-width: 28%;
+  flex: 1 1 45%;
+  display: flex;
+  align-items: center;
+  margin-left: 97px;
+  margin-right: 44px;
+}
+.d-flex {
+  color: #333;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.image-curency {
+  width: 40px;
+  height: 40px;
+  margin-left: 0.5rem;
+}
+.container-firs-name-curency {
+  display: flex;
+  flex-direction: column;
+}
+.searchable {
+  font-size: 14px;
+  margin-bottom: -3px;
+  color: black;
+}
+.firs-name-curency {
+  overflow: hidden;
+  width: 0px;
+  height: 0px;
+  display: block;
+}
+.searchablea {
+  font-size: 10px;
+  color: #999;
+  text-align: right;
+  margin-top: 8px;
+}
+.buy-price-td {
+  display: flex;
+  flex-direction: column;
+}
+.unit-type-2 {
+  font-size: 11px;
+  color: #999 !important;
+}
+.price-wage {
+  display: inline-block;
+}
+.sell-price-td {
+  max-width: 4.2%;
+  flex: 1 1 20%;
+}
+.unit-type-free {
+  color: #32a953;
+  font-size: 10px;
+  margin-left: 25px;
+}
+.sell-price-td-2 {
+  width: 17.2%;
+  display: flex;
+  justify-content: start;
+  padding-right: 14%;
+}

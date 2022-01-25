@@ -55,7 +55,7 @@ export default function HeaderHome() {
                     </a>
                   </li>
                   <li>
-                    <a href="/fee">
+                    <a href="/Wage">
                       <img width="70px" src={Wage} alt="Wage" />
                       <div className="service-title">کارمزدها</div>
                     </a>
