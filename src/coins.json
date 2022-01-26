@@ -10,19 +10,46 @@
     "networkTwo": "BEP20",
     "valueNetworkTwo": "7,20",
     "fee": "رایگان",
-    "icon": "https://bitbarg.me/images/coins/BTC.png"
+    "icon": "https://bitbarg.me/images/coins/BTC.png",
+    "price": "1,075,984,992"
   },
   {
-    "id": 0,
+    "id": 1,
     "namef": "اتریوم",
-    "coin": "btc",
-    "name": "Bitcoin - BTC",
-    "numbercurenct": "1",
+    "name": "Ethereum - ETH",
+    "numbercurenct": "2",
     "networkOne": "Bitcoin",
     "valueNetworkOne": "711,596",
     "networkTwo": "BEP20",
     "valueNetworkTwo": "7,20",
     "fee": "رایگان",
-    "icon": "https://bitbarg.me/images/coins/BTC.png "
+    "icon": "https://bitbarg.me/images/coins/BTC.png",
+    "price": "71,356,032"
+  },
+  {
+    "id": 2,
+    "namef": "بایننس یو اس دی ",
+    "name": "Binance USD - BUSD",
+    "numbercurenct": "3",
+    "networkOne": "Bitcoin",
+    "valueNetworkOne": "711,596",
+    "networkTwo": "BEP20",
+    "valueNetworkTwo": "7,20",
+    "fee": "رایگان",
+    "icon": "https://bitbarg.me/images/coins/ETH.png",
+    "price": "71,058,528"
+  },
+  {
+    "id": 3,
+    "namef": "فانتوم",
+    "name": "Fantom - FTM",
+    "numbercurenct": "4",
+    "networkOne": "Bitcoin",
+    "valueNetworkOne": "711,596",
+    "networkTwo": "BEP20",
+    "valueNetworkTwo": "7,20",
+    "fee": "رایگان",
+    "icon": "https://bitbarg.me/images/coins/BUSD.png",
+    "price": "67,337"
   }
 ]

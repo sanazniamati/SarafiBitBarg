@@ -18,6 +18,7 @@
   display: flex;
   padding: 0 10px;
   justify-content: center;
+  z-index: -1;
 }
 
 .input_main {
@@ -30,6 +31,7 @@
   margin-top: -4px;
   margin-right: 2px;
   text-align: center;
+  z-index: -1;
 }
 
 .text_field {
@@ -98,6 +100,7 @@
   margin-top: 10px;
   font-size: 14px;
   color: gray;
+  direction: rtl;
 }
 
 .buy_content h2 {
