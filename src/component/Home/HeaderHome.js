@@ -114,7 +114,7 @@ export default function HeaderHome() {
                   </li>
 
                   <li>
-                    <a href="/about-us">
+                    <a href="/About">
                       <img width="70px" height="70" src={about} alt="about" />
                       <div className="service-title"> درباره ما</div>
                     </a>

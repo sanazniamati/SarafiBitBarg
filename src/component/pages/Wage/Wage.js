@@ -1,8 +1,8 @@
 import React from "react";
 import "./Wage.css";
-import GlobalHeader from "../header/GlobalHeader";
-import SearchIcon from "../assets/images/SearchIcon";
-import coinsData from "../../coins.json";
+import GlobalHeader from "../../header/GlobalHeader";
+import SearchIcon from "../../assets/images/SearchIcon";
+import coinsData from "../../../coins.json";
 
 export default function Wage() {
   return (
