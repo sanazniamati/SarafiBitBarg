@@ -16,9 +16,6 @@ export default function GlobalHeader() {
           <HeaderHome />
         </div>
       </div>
-      <div className="header_title_blue">
-        <h1>کارمزد ارزهای دیجیتال</h1>
-      </div>
     </div>
   );
 }

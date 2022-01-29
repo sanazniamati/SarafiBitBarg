@@ -1,7 +1,7 @@
 import React from "react";
 import "./Main.css";
 import ResultList from "./ResultList";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/bitbarg.svg";
 import { useState } from "react";
 export default function Main() {
   const [showbox, setShowbox] = useState("false");

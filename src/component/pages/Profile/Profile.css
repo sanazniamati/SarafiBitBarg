@@ -1,0 +1,44 @@
+.main_form {
+  width: 450px;
+  height: 436px;
+  margin: 0 auto 20px auto;
+  min-height: 436px;
+  position: relative;
+  text-align: center;
+  border-radius: 5px;
+  padding: 40px 25px 50px;
+  display: block;
+  box-shadow: 0 2px 7px 0 rgb(0 0 0 / 16%);
+}
+.information {
+  color: #333;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  direction: rtl;
+  margin-bottom: 10px;
+}
+.main_form form {
+  padding: 0 4rem;
+  background-color: lightskyblue;
+}
+.v-input {
+  align-items: flex-start;
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 16px;
+  letter-spacing: normal;
+  max-width: 100%;
+  text-align: left;
+}
+.v-text-field--outlined {
+  margin-bottom: 16px;
+  transition: border 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.v-text-field--outlined,
+.v-text-field--solo {
+  border-radius: 4px;
+}
+.v-text-field--outlined {
+  position: relative;
+}

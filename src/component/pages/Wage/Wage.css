@@ -1,3 +1,14 @@
+.header_title_blue {
+  padding: 14px;
+  background-color: #3590ff;
+}
+.header_title_blue h1 {
+  text-align: right;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 100;
+  padding: 0 6px;
+}
 .parent_container {
   display: flex;
   justify-content: center;
@@ -232,6 +243,27 @@
 .sell-price-td-2 {
   width: 17.2%;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   padding-right: 14%;
+}
+/* pagination style */
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 10px;
+  direction: rtl;
+}
+.pagination li a {
+  text-decoration: none;
+  font-size: 14px !important;
+  color: #3590ff;
+}
+
+.center {
+  margin: 0 1rem;
+  color: #4caf50d9;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
 }

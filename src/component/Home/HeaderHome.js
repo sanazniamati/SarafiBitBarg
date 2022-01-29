@@ -16,6 +16,7 @@ import Relationship from "../assets/images/Relationship.png";
 import bag from "../assets/images/bag.png";
 import opportunity from "../assets/images/opportunity.png";
 import about from "../assets/images/about.png";
+import home from "../assets/images/home.png";
 import { useState } from "react";
 // import * as faIcone from "react-icons/fa";
 
@@ -48,8 +49,15 @@ export default function HeaderHome() {
                       <div className="service-title">سفارشات</div>
                     </a>
                   </li>
+                  {/* اگر در صفحاتی بغیر از هوم بود این دیو نمایش بده در منو
                   <li>
-                    <a href="https://bitbarg.me/profile">
+                    <a href="https://bitbarg.me/users/kyc">
+                      <img width="70px" src={home} alt="home" />
+                      <div className="service-title">خانه</div>
+                    </a>
+                  </li> */}
+                  <li>
+                    <a href="/Profile">
                       <img width="70px" src={profile} alt="profile" />
                       <div className="service-title">پروفایل</div>
                     </a>
