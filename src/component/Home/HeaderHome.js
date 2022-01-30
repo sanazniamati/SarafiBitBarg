@@ -148,8 +148,10 @@ export default function HeaderHome() {
           ) : null}
         </div>
         <a href="https://bitbarg.me/users/login" className="btn_login_a">
-          <div className="btn_login">ورود</div>
-          {/* <div class="js-fade-text">ثبت نام</div> */}
+          <div className="btn_login">
+            <div className="s1 word">ورود</div>
+            {/* <div className="s2 word">ثبت نام</div> */}
+          </div>
         </a>
       </div>
     </div>

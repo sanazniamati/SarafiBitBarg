@@ -3,6 +3,9 @@ import "./Main.css";
 import ResultList from "./ResultList";
 import logo from "../assets/images/bitbarg.svg";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+
 export default function Main() {
   const [showbox, setShowbox] = useState("false");
   const show = () => setShowbox((showbox) => !showbox);
@@ -42,12 +45,16 @@ export default function Main() {
             <h2>در خدمت شما هستیم</h2>
           </div>
           <div className="contact">
+            <span>
+              <FontAwesomeIcon icon={faPhone}>
+                <i
+                  className="fa fa-phone"
+                  style={{ direction: "ltr" }}
+                  aria-hidden="true"
+                ></i>
+              </FontAwesomeIcon>
+            </span>
             <a href="tel:02191079677">۹۱۰۷۹۶۷۷</a>
-            {/* <span>
-              <svg id="toggle-nav">
-                <use xlink:href="/images/cryptoicons.svg?1.0.3#call"></use>
-              </svg>
-            </span> */}
           </div>
         </div>
       </div>

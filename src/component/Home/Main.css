@@ -141,6 +141,12 @@
   color: #2485fd;
   margin-top: -2px;
 }
+.fa-phone {
+  height: 12px;
+  width: 14px;
+  color: #276da7;
+  transform: scaleX(-1);
+}
 
 @media only screen and (max-width: 1200px) {
   .bit_main_container {

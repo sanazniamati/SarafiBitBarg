@@ -7,7 +7,6 @@
   text-align: center;
   border-radius: 5px;
   padding: 40px 25px 50px;
-  display: block;
   box-shadow: 0 2px 7px 0 rgb(0 0 0 / 16%);
 }
 .information {
@@ -20,7 +19,6 @@
 }
 .main_form form {
   padding: 0 4rem;
-  background-color: lightskyblue;
 }
 .v-input {
   align-items: flex-start;
@@ -30,15 +28,142 @@
   letter-spacing: normal;
   max-width: 100%;
   text-align: left;
+  color: rgba(0, 0, 0, 0.87);
 }
 .v-text-field--outlined {
   margin-bottom: 16px;
-  transition: border 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
-}
-.v-text-field--outlined,
-.v-text-field--solo {
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
   border-radius: 4px;
-}
-.v-text-field--outlined {
   position: relative;
+}
+
+.v-input__control {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  min-width: 0;
+  width: 100%;
+}
+.v-input__slot {
+  padding: 0 12px;
+  margin-bottom: 4px;
+  background: transparent;
+  align-items: stretch;
+  cursor: text;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+  position: relative;
+  width: 100%;
+}
+fieldset {
+  color: rgba(0, 0, 0, 0.38);
+  padding-right: 8px;
+  border-collapse: collapse;
+  border-color: currentColor;
+  border-style: solid;
+  border-width: 1px;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: -5px;
+  transition-duration: 0.3s;
+  transition-property: color, border-width;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+legend {
+  text-align: right;
+  width: 48.75px;
+  line-height: 11px;
+  padding: 0;
+  transition: width 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+  display: table;
+  white-space: normal;
+  max-width: 100%;
+}
+.v-label {
+  left: auto;
+  right: 0px;
+  position: absolute;
+  transform: translateY(-16px) scale(0.75);
+  transform-origin: top right;
+  font-size: 13px;
+  top: 8px !important;
+  color: rgba(0, 0, 0, 0.6);
+  height: 20px;
+  line-height: 20px;
+  max-width: 133%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+  white-space: nowrap;
+  pointer-events: none;
+}
+.phone-number--input {
+  color: rgba(0, 0, 0, 0.87);
+  text-align: center;
+  direction: ltr;
+  max-height: 32px;
+  flex: 1 1 auto;
+  line-height: 20px;
+  padding: 8px 0 8px;
+  max-width: 100%;
+  min-width: 0px;
+  width: 100%;
+  background-color: transparent;
+  border-style: none;
+}
+.v-text-field__details {
+  padding: 0 12px;
+  display: flex;
+  flex: 1 0 auto;
+  max-width: 100%;
+  min-height: 14px;
+  overflow: hidden;
+}
+.v-messages {
+  text-align: right;
+  color: rgba(0, 0, 0, 0.6);
+  flex: 1 1 auto;
+  font-size: 12px;
+  min-height: 14px;
+  min-width: 1px;
+  position: relative;
+}
+.v-messages__wrapper {
+  text-align: justify;
+}
+.v-btn {
+  width: 100px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  outline: none;
+  margin-top: -5px;
+  padding: 0 16px;
+  color: #fff;
+  background-color: #2585ff !important;
+  border-color: #2585ff !important;
+  font-size: 0.875rem;
+  align-items: center;
+  border-radius: 4px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  text-decoration: none;
+  text-indent: 0.0892857143em;
+  transition-property: box-shadow, transform, opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.v-size--default {
+  width: 100% !important;
+  height: 40px !important;
+}
+.v-btn--contained {
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+    0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
 }

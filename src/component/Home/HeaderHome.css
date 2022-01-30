@@ -23,9 +23,44 @@
   outline: none;
   margin-top: -8px;
 }
+
+.s1 {
+  animation: w1 3s infinite;
+}
+@keyframes w1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*
+refrence:https://codepen.io/RomanKl/pen/wdrVbd?editors=1100
+ .s2 {
+  animation: w2 5s infinite;
+}
+
+@keyframes w2 {
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} */
+
 .btn_login_a {
   text-decoration: none;
 }
+
 .service_button {
   color: gray;
   margin-right: 7px;
