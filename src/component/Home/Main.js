@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export default function Main() {
-  const [showbox, setShowbox] = useState("false");
+  const [showbox, setShowbox] = useState(false);
   const show = () => setShowbox((showbox) => !showbox);
   return (
     <>

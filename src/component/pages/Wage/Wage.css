@@ -13,7 +13,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -12px;
 }
 
 .list_page_content {
@@ -88,6 +87,7 @@
   border: 0;
 }
 
+/* list style */
 .list_page_content p {
   font-size: 12px;
   padding: 10px;
@@ -145,19 +145,22 @@
   text-align: start;
   padding-right: 36px;
 }
+
 .sell_price_td {
   max-width: 20%;
   flex: 1 1 20%;
-  text-align: start;
+  text-align: center;
   overflow: hidden;
   -webkit-line-clamp: 1;
   line-height: 16px;
 }
+
 .buy_price_td {
   max-width: 38%;
   flex: 1 1 30%;
-  text-align: center;
+  text-align: start;
 }
+
 .css-4cffwv {
   width: 100%;
   direction: rtl;
@@ -166,6 +169,7 @@
   border-color: #eaecef;
   padding-bottom: 10px;
 }
+
 .css-ahynou {
   cursor: pointer;
   text-decoration: none;
@@ -180,6 +184,7 @@
   color: #afafaf;
   margin-right: 45px;
 }
+
 .name-td-2 {
   max-width: 28%;
   flex: 1 1 45%;
@@ -188,6 +193,7 @@
   margin-left: 97px;
   margin-right: 44px;
 }
+
 .d-flex {
   color: #333;
   display: flex;
@@ -203,17 +209,20 @@
   display: flex;
   flex-direction: column;
 }
+
 .searchable {
   font-size: 14px;
   margin-bottom: -3px;
   color: black;
 }
+
 .firs-name-curency {
   overflow: hidden;
   width: 0px;
   height: 0px;
   display: block;
 }
+
 .searchablea {
   font-size: 10px;
   color: #999;
@@ -221,6 +230,8 @@
   margin-top: 8px;
 }
 .buy-price-td {
+  max-width: 38%;
+  flex: 1 1 30%;
   display: flex;
   flex-direction: column;
 }
@@ -244,7 +255,7 @@
   width: 17.2%;
   display: flex;
   justify-content: center;
-  padding-right: 14%;
+  /* padding-right: 14%; */
 }
 /* pagination style */
 .pagination {
@@ -266,4 +277,42 @@
   display: flex;
   align-items: center;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 568px) {
+  .input_search_box_view {
+    width: 100%;
+  }
+  .input_search_box_view input {
+    text-align: right;
+  }
+  .p_warning_wage {
+    text-align: right;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .name-td-2 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .searchable {
+    font-size: 12px;
+  }
+
+  .number-td-2 {
+    max-width: 8%;
+    flex: 0 1 8%;
+    text-align: center;
+    color: #afafaf;
+    margin-right: 0px;
+  }
+  .name-td-2 {
+    max-width: 36%;
+  }
+  .unit-type-2 {
+    font-size: 9px;
+  }
+  .center {
+    font-size: 9px;
+  }
 }

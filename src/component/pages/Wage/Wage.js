@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReactTooltip from "react-tooltip";
 import "./Wage.css";
 import GlobalHeader from "../../header/GlobalHeader";
 import SearchIcon from "../../assets/images/SearchIcon";
@@ -35,13 +36,14 @@ export default function Wage() {
               کارمزد های خرید همان کارمزد شبکه میباشد که توسط شبکه تعیین میشود و
               بیت برگ هیچ منفعتی در این امر ندارد لازم به ذکر است مرجع تعیین
               قیمت کارمزدها صرافی بین المللی بایننس است
-              <p className="p_2_warning_wage">:توجه</p>
+              <span className="p_2_warning_wage">:توجه</span>
             </p>
+
             <div className="tabel_header">
               <div className="number_td">#</div>
               <div className="name_td">ارز دیجیتال</div>
-              <div className="sell_price_td">کارمزد خرید</div>
-              <div className="buy_price_td">کارمزد فروش</div>
+              <div className="buy_price_td">کارمزد خرید</div>
+              <div className="sell_price_td">کارمزد فروش</div>
             </div>
             {coinsData
               .filter((val) => {
@@ -55,13 +57,9 @@ export default function Wage() {
                 }
               })
               .map((coins) => (
-                <div
-                  className="css-4cffwv lp-currency--row"
-                  href="https://bitbarg.me/bitcoin"
-                  data-symbol="BTCUSDT"
-                >
+                <div className="css-4cffwv ">
                   <div className="css-ahynou">
-                    <div className="number-td-2">{coins.numbercurenct}</div>
+                    <div className="number-td-2">{coins.numberCurent}</div>
 
                     <div className="name-td-2">
                       <a className="d-flex" href="https://bitbarg.me/bitcoin">
@@ -77,7 +75,7 @@ export default function Wage() {
                               {coins.name}
                             </span>
                           </span>
-                          <span className="searchablea">Bitcoin - BTC</span>
+                          <span className="searchablea">{coins.name}</span>
                         </div>
                       </a>
                     </div>
